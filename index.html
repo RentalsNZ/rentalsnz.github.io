@@ -24,7 +24,7 @@
     a{text-decoration:none;color:inherit;}
     .container{max-width:1100px;margin:0 auto;padding:24px;}
 
-    /* Sticky header: stays visible while scrolling */
+    /* Sticky header */
     header{
       position:sticky;
       top:0;
@@ -43,6 +43,9 @@
       font-weight:800;
       letter-spacing:.2px;
     }
+    .brand:hover{
+      color:var(--accent);
+    }
 
     /* Buttons */
     .btn{
@@ -52,17 +55,13 @@
       font-weight:700;
       border:1px solid transparent;
       white-space:nowrap;
+      transition:.15s;
     }
     .btn-primary{
       background:var(--accent);
       color:#fff;
     }
     .btn-primary:hover{opacity:.95;}
-    .btn-outline{
-      border-color:var(--border);
-      background:#fff;
-    }
-    .btn-outline:hover{background:var(--alt);}
 
     /* Hero */
     .hero{
@@ -124,7 +123,7 @@
       color:var(--muted);
     }
 
-    /* Why section */
+    /* Why */
     .why{
       margin-top:32px;
       max-width:800px;
@@ -135,7 +134,7 @@
       color:var(--muted);
     }
 
-    /* Pricing (cards only here) */
+    /* Pricing */
     .pricing-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -180,7 +179,7 @@
     }
   </style>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BNQ0JD3S1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -204,12 +203,13 @@
 
 <header>
   <div class="container nav">
-    <div class="brand">RentalViewer</div>
+    <!-- Logo now links to top of page -->
+    <a href="#" class="brand">RentalViewer</a>
     <a class="btn btn-primary" href="#contact">Contact RentalViewer</a>
   </div>
 </header>
 
-<section class="hero">
+<section class="hero" id="top">
   <div class="container">
     <h1>We attend rental viewings for you — so you don’t have to.</h1>
     <p>
@@ -219,8 +219,8 @@
     </p>
 
     <div class="hero-actions">
-      <a class="btn btn-outline" href="#how">How it works</a>
-      <a class="btn btn-outline" href="#pricing">Pricing</a>
+      <a class="btn btn-primary" href="#how">How it works</a>
+      <a class="btn btn-primary" href="#pricing">Pricing</a>
     </div>
 
     <div class="hero-note">
