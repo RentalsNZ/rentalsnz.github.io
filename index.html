@@ -4,10 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>RentalViewer – Attend Rental Viewings Without Being There</title>
-  <meta name="description" content="RentalViewer attends rental and flat viewings across Auckland. Live video calls or recorded walkthroughs with honest feedback so you can apply with confidence." />
+  <!-- SEO: Title + description -->
+  <title>RentalViewer Auckland – Rental Viewing Service (Live Video or Recorded Walkthrough)</title>
+  <meta name="description" content="RentalViewer is an Auckland rental viewing service. We attend flat and rental viewings for you via live video call or recorded walkthrough, with honest independent feedback so you can apply confidently." />
+
+  <!-- SEO: Canonical (set to GitHub URL for now; change to your custom domain when you launch it) -->
+  <link rel="canonical" href="https://rentalsnz.github.io/" />
+
+  <!-- SEO: Robots -->
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social share (Open Graph + Twitter) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RentalViewer Auckland – We Attend Rental Viewings for You" />
+  <meta property="og:description" content="Auckland rental viewing service: live video call or recorded walkthrough with honest feedback so you can decide faster." />
+  <meta property="og:url" content="https://rentalsnz.github.io/" />
+  <meta property="og:site_name" content="RentalViewer" />
+  <!-- Optional: add an image later and update this -->
+  <!-- <meta property="og:image" content="https://rentalsnz.github.io/og-image.png" /> -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="RentalViewer Auckland – Rental Viewing Service" />
+  <meta name="twitter:description" content="We attend Auckland rental viewings for you via live video call or recorded walkthrough." />
 
   <link rel="icon" href="favicon.ico" />
+
+  <!-- SEO: Structured data (update URL to custom domain when you switch) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RentalViewer",
+    "description": "Auckland rental viewing service. We attend flat and rental viewings for you via live video call or recorded walkthrough, providing honest independent feedback.",
+    "url": "https://rentalsnz.github.io/",
+    "areaServed": {
+      "@type": "City",
+      "name": "Auckland"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auckland",
+      "addressCountry": "NZ"
+    },
+    "priceRange": "$$",
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "Recorded Walkthrough",
+        "price": "49",
+        "priceCurrency": "NZD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Live Video Call",
+        "price": "69",
+        "priceCurrency": "NZD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Multi-viewing Pack (3 viewings)",
+        "price": "180",
+        "priceCurrency": "NZD"
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root{
@@ -20,6 +80,7 @@
     }
 
     *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+    html{scroll-behavior:smooth;} /* UX polish for anchor links */
     body{background:var(--bg);color:var(--primary);line-height:1.65;}
     a{text-decoration:none;color:inherit;}
     .container{max-width:1100px;margin:0 auto;padding:24px;}
@@ -60,11 +121,6 @@
       color:#fff;
     }
     .btn-primary:hover{opacity:.95;}
-    .btn-outline{
-      border-color:var(--border);
-      background:#fff;
-    }
-    .btn-outline:hover{background:var(--alt);}
 
     /* Hero */
     .hero{
@@ -74,14 +130,14 @@
     .hero h1{
       font-size:3rem;
       line-height:1.1;
-      max-width:900px;
+      max-width:980px;
       margin:0 auto 20px;
       letter-spacing:-.6px;
     }
     .hero p{
       font-size:1.2rem;
       color:var(--muted);
-      max-width:760px;
+      max-width:860px;
       margin:0 auto;
     }
     .hero-actions{
@@ -106,7 +162,7 @@
     }
     .section .sub{
       color:var(--muted);
-      max-width:850px;
+      max-width:900px;
     }
 
     /* How it works */
@@ -122,9 +178,7 @@
       color:var(--accent);
       margin-bottom:8px;
     }
-    .step p{
-      color:var(--muted);
-    }
+    .step p{color:var(--muted);}
 
     /* Lists */
     .bullets{
@@ -145,7 +199,7 @@
       margin-top:32px;
     }
     .price-card{
-      position:relative;            /* allows corner tag */
+      position:relative;
       border:1px solid var(--border);
       padding:28px;
       background:#fff;
@@ -155,14 +209,10 @@
       font-weight:800;
       margin:12px 0;
     }
-
-    /* Featured styling that DOES NOT change spacing */
     .featured{
       border:2px solid var(--accent);
       box-shadow:0 10px 28px rgba(37,99,235,.10);
     }
-
-    /* Corner tag: doesn't push content down */
     .tag{
       position:absolute;
       top:14px;
@@ -209,142 +259,183 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "v8gdp8fd73");
   </script>
-
 </head>
 
 <body>
 
 <header>
   <div class="container nav">
-    <a href="#" class="brand">RentalViewer</a>
+    <a href="#" class="brand" aria-label="RentalViewer home">RentalViewer</a>
     <a class="btn btn-primary" href="#contact">Contact RentalViewer</a>
   </div>
 </header>
 
-<section class="hero" id="top">
-  <div class="container">
-    <h1>We attend rental viewings for you — so you don’t have to.</h1>
-    <p>
-      RentalViewer attends rental and flat viewings across Auckland on your behalf.
-      Join live via video call or receive a recorded walkthrough with honest, independent feedback —
-      so you can decide quickly and apply with confidence.
-    </p>
+<main>
+  <!-- SEO: explicit IDs and scannable structure -->
+  <section class="hero" id="top">
+    <div class="container">
+      <!-- SEO: location keyword in H1 without sounding spammy -->
+      <h1>Auckland rental viewing service — we attend viewings for you.</h1>
 
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#how">How it works</a>
-      <a class="btn btn-primary" href="#pricing">Pricing</a>
-    </div>
+      <p>
+        RentalViewer attends Auckland flat and rental viewings on your behalf.
+        Choose a <strong>live video call</strong> or a <strong>recorded walkthrough</strong> and get honest, independent feedback
+        so you can decide faster and apply with confidence.
+      </p>
 
-    <div class="hero-note">
-      Independent service · Not affiliated with agents · No subscriptions
-    </div>
-  </div>
-</section>
-
-<section class="section" id="how">
-  <div class="container">
-    <h2>How it works</h2>
-    <p class="sub">A simple process designed for busy renters and relocations.</p>
-
-    <div class="steps">
-      <div class="step">
-        <span>1. Send the listing</span>
-        <p>Share the property link, suburb, and scheduled viewing time.</p>
-      </div>
-      <div class="step">
-        <span>2. We attend</span>
-        <p>We join the viewing and video call you live or record a walkthrough.</p>
-      </div>
-      <div class="step">
-        <span>3. Get clear feedback</span>
-        <p>You receive practical notes on layout, light, noise, condition, and any red flags.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="why">
-  <div class="container">
-    <h2>Why RentalViewer</h2>
-    <p class="sub">
-      RentalViewer is built for renters who need reliable, honest information — without the pressure or bias of agents.
-    </p>
-
-    <ul class="bullets">
-      <li>Independent service — we don’t work for landlords or agents</li>
-      <li>Focus on what matters: layout, natural light, noise, and condition</li>
-      <li>Live video or detailed walkthroughs you can replay anytime</li>
-      <li>Save travel time and avoid applying for the wrong place</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" id="included">
-  <div class="container">
-    <h2>What’s included</h2>
-    <p class="sub">Every viewing includes a clear, practical assessment — not just a video.</p>
-
-    <ul class="bullets">
-      <li>Full video walkthrough (live or recorded)</li>
-      <li>Notes on layout, space, and natural light</li>
-      <li>Observations on noise, street activity, and surroundings</li>
-      <li>Condition check: damp signs, ventilation, general upkeep (non-technical)</li>
-      <li>Honest feedback on pros, cons, and red flags</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section alt" id="pricing">
-  <div class="container">
-    <h2>Pricing</h2>
-    <p class="sub">
-      Transparent pricing. No subscriptions, no contracts. Just pay for the viewings you need.
-    </p>
-    <p class="sub" style="margin-top:10px;">
-      Most renters spend $20–$40 in travel and hours of time for each open home.
-      RentalViewer gives you the same insight — plus independent feedback.
-    </p>
-
-    <div class="pricing-grid">
-      <div class="price-card">
-        <h3>Recorded walkthrough</h3>
-        <div class="price">$49</div>
-        <p>Video walkthrough with written notes after the viewing.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#how">How it works</a>
+        <a class="btn btn-primary" href="#pricing">Pricing</a>
       </div>
 
-      <div class="price-card featured">
-        <span class="tag">Most popular</span>
-        <h3>Live video call</h3>
-        <div class="price">$69</div>
-        <p>Join the viewing live and ask questions in real time.</p>
-      </div>
-
-      <div class="price-card">
-        <h3>Multi-viewing pack</h3>
-        <div class="price">$180</div>
-        <p>Three viewings at a discounted rate for active searches.</p>
+      <div class="hero-note">
+        Independent service · Not affiliated with agents · No subscriptions
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section" id="contact">
-  <div class="container">
-    <h2>Request a viewing</h2>
-    <p class="sub">Send the listing link and viewing time to get started.</p>
+  <section class="section" id="how">
+    <div class="container">
+      <h2>How RentalViewer works</h2>
+      <p class="sub">
+        A simple process for busy renters, relocations, and overseas moves — anywhere in Auckland.
+      </p>
 
-    <div class="hero-actions">
-      <a class="btn btn-primary"
-         href="mailto:hello@rentalviewer.co.nz?subject=Viewing%20Request&body=Hi%20RentalViewer%2C%0A%0AListing%20link%3A%20%0AViewing%20time%3A%20%0ASuburb%3A%20%0APreferred%20option%20(Live%20or%20Recorded)%3A%20%0AThings%20to%20check%3A%20%0A%0AThanks!">
-        Email RentalViewer
-      </a>
+      <div class="steps">
+        <div class="step">
+          <span>1. Send the listing</span>
+          <p>Share the Trade Me / agency link, suburb, and scheduled viewing time.</p>
+        </div>
+        <div class="step">
+          <span>2. We attend the viewing</span>
+          <p>We join the rental viewing and video call you live or record a walkthrough.</p>
+        </div>
+        <div class="step">
+          <span>3. Get practical feedback</span>
+          <p>Notes on layout, natural light, noise, condition, and any red flags (non-technical).</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="hero-note">
-      Tip: include the viewing time and suburb so we can confirm availability quickly.
+  <section class="section alt" id="why">
+    <div class="container">
+      <h2>Why choose RentalViewer in Auckland</h2>
+      <p class="sub">
+        Built for renters who need reliable information — without pressure or sales tactics.
+      </p>
+
+      <ul class="bullets">
+        <li>Independent service — we don’t work for landlords or agents</li>
+        <li>Focus on what matters: layout, daylight, noise, and general condition</li>
+        <li>Live video or replayable walkthroughs you can review later</li>
+        <li>Save travel time and avoid applying for the wrong flat</li>
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section" id="included">
+    <div class="container">
+      <h2>What’s included in every viewing</h2>
+      <p class="sub">
+        You get a clear, practical assessment — not just a video.
+      </p>
+
+      <ul class="bullets">
+        <li>Full video walkthrough (live or recorded)</li>
+        <li>Notes on layout, space, and natural light</li>
+        <li>Observations on noise, street activity, and surroundings</li>
+        <li>Condition check: damp signs, ventilation, general upkeep (non-technical)</li>
+        <li>Honest feedback on pros, cons, and red flags</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SEO: local targeting without spam -->
+  <section class="section alt" id="areas">
+    <div class="container">
+      <h2>Areas we cover</h2>
+      <p class="sub">
+        We cover most of Auckland. Common areas include: CBD, Ponsonby, Grey Lynn, Mt Eden, Newmarket, Remuera,
+        Epsom, Onehunga, Mt Wellington, Glen Innes, Kingsland, Eden Terrace, and the North Shore.
+      </p>
+      <p class="sub" style="margin-top:10px;">
+        Not sure if we can make a specific viewing time or suburb? Email us and we’ll confirm availability.
+      </p>
+    </div>
+  </section>
+
+  <section class="section alt" id="pricing">
+    <div class="container">
+      <h2>Pricing</h2>
+      <p class="sub">
+        Transparent pricing. No subscriptions, no contracts — just pay for the viewings you need.
+      </p>
+      <p class="sub" style="margin-top:10px;">
+        Most renters spend $20–$40 in travel and hours of time for each open home.
+        RentalViewer gives you the same insight — plus independent feedback.
+      </p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Recorded walkthrough</h3>
+          <div class="price">$49 NZD</div>
+          <p>Video walkthrough with written notes after the rental viewing.</p>
+        </div>
+
+        <div class="price-card featured">
+          <span class="tag">Most popular</span>
+          <h3>Live video call</h3>
+          <div class="price">$69 NZD</div>
+          <p>Join the viewing live and ask questions in real time via video call.</p>
+        </div>
+
+        <div class="price-card">
+          <h3>Multi-viewing pack</h3>
+          <div class="price">$180 NZD</div>
+          <p>Three viewings at a discounted rate for active Auckland rental searches.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO: FAQ content helps long-tail searches -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <p class="sub">Quick answers to common questions about our Auckland rental viewing service.</p>
+
+      <ul class="bullets">
+        <li><strong>Do you work with agents or landlords?</strong> No — we’re independent and focused on the renter.</li>
+        <li><strong>How fast do I get the video and notes?</strong> Typically the same day, depending on viewing time.</li>
+        <li><strong>What if filming isn’t allowed?</strong> We’ll do a live call where possible and provide written notes.</li>
+        <li><strong>Do you do technical building inspections?</strong> No — we provide a practical, non-technical assessment.</li>
+        <li><strong>Can you attend viewings outside Auckland?</strong> Currently Auckland-focused. Ask and we’ll advise.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section alt" id="contact">
+    <div class="container">
+      <h2>Request a viewing</h2>
+      <p class="sub">
+        Email us the listing link, suburb, and viewing time. We’ll reply to confirm availability and the best option
+        (live video call or recorded walkthrough).
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary"
+           href="mailto:hello@rentalviewer.co.nz?subject=Viewing%20Request%20(Auckland)&body=Hi%20RentalViewer%2C%0A%0AListing%20link%3A%20%0AViewing%20time%3A%20%0ASuburb%3A%20%0APreferred%20option%20(Live%20or%20Recorded)%3A%20%0AThings%20to%20check%3A%20%0A%0AThanks!">
+          Email RentalViewer
+        </a>
+      </div>
+
+      <div class="hero-note">
+        Tip: the more detail you include, the faster we can confirm.
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
   <strong>RentalViewer</strong> · Auckland, New Zealand<br>
