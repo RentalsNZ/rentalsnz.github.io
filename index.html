@@ -33,10 +33,12 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
+      gap:16px;
     }
     .brand{
       font-size:1.2rem;
       font-weight:800;
+      letter-spacing:.2px;
     }
 
     /* Buttons */
@@ -46,15 +48,18 @@
       border-radius:8px;
       font-weight:700;
       border:1px solid transparent;
+      white-space:nowrap;
     }
     .btn-primary{
       background:var(--accent);
       color:#fff;
     }
+    .btn-primary:hover{opacity:.95;}
     .btn-outline{
       border-color:var(--border);
       background:#fff;
     }
+    .btn-outline:hover{background:var(--alt);}
 
     /* Hero */
     .hero{
@@ -127,7 +132,7 @@
       color:var(--muted);
     }
 
-    /* Pricing */
+    /* Pricing (cards only here) */
     .pricing-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -147,6 +152,16 @@
     .featured{
       border:2px solid var(--accent);
     }
+    .badge{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(37,99,235,.10);
+      color:var(--accent);
+      font-weight:800;
+      font-size:.85rem;
+      margin-bottom:12px;
+    }
 
     /* Footer */
     footer{
@@ -162,7 +177,7 @@
     }
   </style>
 
-  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BNQ0JD3S1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -174,9 +189,9 @@
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "v8gdp8fd73");
   </script>
 
@@ -187,7 +202,7 @@
 <header>
   <div class="container nav">
     <div class="brand">RentalViewer</div>
-    <a class="btn btn-primary" href="#contact">Request a viewing</a>
+    <a class="btn btn-primary" href="#contact">Contact RentalViewer</a>
   </div>
 </header>
 
@@ -201,7 +216,7 @@
     </p>
 
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#contact">Request a viewing</a>
+      <a class="btn btn-primary" href="#contact">Contact RentalViewer</a>
       <a class="btn btn-outline" href="#how">How it works</a>
     </div>
 
@@ -230,6 +245,10 @@
         <p>Notes on layout, sunlight, noise, condition, and red flags.</p>
       </div>
     </div>
+
+    <div class="hero-actions" style="margin-top:36px;">
+      <a class="btn btn-primary" href="#contact">Contact RentalViewer</a>
+    </div>
   </div>
 </section>
 
@@ -246,6 +265,11 @@
       <li>Want a second, unbiased opinion before applying</li>
       <li>Need to move quickly in a competitive rental market</li>
     </ul>
+
+    <div class="hero-actions" style="margin-top:32px; justify-content:flex-start;">
+      <a class="btn btn-primary" href="#contact">Contact RentalViewer</a>
+      <a class="btn btn-outline" href="#pricing">See pricing</a>
+    </div>
   </div>
 </section>
 
@@ -262,6 +286,7 @@
       </div>
 
       <div class="price-card featured">
+        <span class="badge">Most popular</span>
         <h3>Live video call</h3>
         <div class="price">$69</div>
         <p>Join the viewing live and ask questions in real time.</p>
@@ -275,21 +300,26 @@
     </div>
 
     <div class="hero-actions" style="margin-top:32px;">
-      <a class="btn btn-primary" href="#contact">Request a viewing</a>
+      <a class="btn btn-primary" href="#contact">Contact RentalViewer</a>
     </div>
   </div>
 </section>
 
-<section class="section" id="contact">
+<section class="section alt" id="contact">
   <div class="container">
     <h2>Request a viewing</h2>
     <p class="sub">Send the listing link and viewing time to get started.</p>
 
     <div class="hero-actions">
       <a class="btn btn-primary"
-         href="mailto:hello@rentalviewer.co.nz?subject=Viewing%20Request&body=Listing%20link:%0AViewing%20time:%0ASuburb:%0ALive%20or%20Recorded:%0AThings%20to%20check:%0A">
+         href="mailto:hello@rentalviewer.co.nz?subject=Viewing%20Request&body=Hi%20RentalViewer%2C%0A%0AListing%20link%3A%20%0AViewing%20time%3A%20%0ASuburb%3A%20%0APreferred%20option%20(Live%20or%20Recorded)%3A%20%0AThings%20to%20check%3A%20%0A%0AThanks!">
         Email RentalViewer
       </a>
+      <a class="btn btn-outline" href="#pricing">Back to pricing</a>
+    </div>
+
+    <div class="hero-note">
+      Tip: include the viewing time and suburb so we can confirm availability quickly.
     </div>
   </div>
 </section>
