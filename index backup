@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BNQ0JD3S1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-1BNQ0JD3S1');
+</script>
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "v8gdp8fd73");
+</script>
+
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>RentalViewer – We Attend Rental Viewings for You</title>
+  <meta name="description" content="RentalViewer attends rental and flat viewings on your behalf. Live video calls or recorded walkthroughs across Auckland." />
+
+  <link rel="icon" href="favicon.ico" />
+
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --light: #f8fafc;
+      --muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .hero {
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.15rem;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .cta {
+      margin-top: 32px;
+    }
+
+    .cta a {
+      background: var(--accent);
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 8px;
+      display: inline-block;
+    }
+
+    .section {
+      padding: 64px 24px;
+      background: white;
+      margin-top: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .pricing {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 12px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 16px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">RentalViewer</div>
+    <div>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>We attend rental viewings for you</h1>
+  <p>
+    Can’t make it to an open home? RentalViewer attends rental and flat viewings
+    on your behalf — live via video call or with a recorded walkthrough.
+  </p>
+
+  <div class="cta">
+    <a href="#contact">Request a Viewing</a>
+    <a href="#how">How It Works</a>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="container">
+    <h2>How it works</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>1. Send us the listing</h3>
+        <p>Share the Trade Me or agency link and preferred viewing time.</p>
+      </div>
+
+      <div class="card">
+        <h3>2. We attend for you</h3>
+        <p>We join the viewing and video call you live or record a walkthrough.</p>
+      </div>
+
+      <div class="card">
+        <h3>3. Honest feedback</h3>
+        <p>We report on layout, noise, sunlight, condition, and red flags.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Pricing</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Recorded Walkthrough</h3>
+        <p class="pricing">$49</p>
+        <p>Video walkthrough + written notes.</p>
+      </div>
+
+      <div class="card">
+        <h3>Live Video Call</h3>
+        <p class="pricing">$69</p>
+        <p>Join the viewing live via Google Meet.</p>
+      </div>
+
+      <div class="card">
+        <h3>Multi-Viewing Pack</h3>
+        <p class="pricing">$180</p>
+        <p>Three viewings at a discounted rate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <h2>Request a viewing</h2>
+    <p>Email us or book a time to get started.</p>
+
+    <div class="cta">
+      <a href="mailto:hello@rentalviewer.co.nz">Email RentalViewer</a>
+      <!-- Replace with Calendly or Form link later -->
+      <a href="#">Book a Call</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    RentalViewer is an independent viewing service and is not a property manager
+    or licensed building inspector. Observations are non-technical.
+  </p>
+  <p>© 2026 RentalViewer</p>
+</footer>
+
+</body>
+</html>
