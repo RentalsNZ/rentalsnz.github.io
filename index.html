@@ -43,9 +43,7 @@
       font-weight:800;
       letter-spacing:.2px;
     }
-    .brand:hover{
-      color:var(--accent);
-    }
+    .brand:hover{color:var(--accent);}
 
     /* Buttons */
     .btn{
@@ -62,6 +60,11 @@
       color:#fff;
     }
     .btn-primary:hover{opacity:.95;}
+    .btn-outline{
+      border-color:var(--border);
+      background:#fff;
+    }
+    .btn-outline:hover{background:var(--alt);}
 
     /* Hero */
     .hero{
@@ -103,7 +106,7 @@
     }
     .section .sub{
       color:var(--muted);
-      max-width:820px;
+      max-width:850px;
     }
 
     /* How it works */
@@ -123,12 +126,12 @@
       color:var(--muted);
     }
 
-    /* Why */
-    .why{
-      margin-top:32px;
-      max-width:800px;
+    /* Lists */
+    .bullets{
+      margin-top:28px;
+      max-width:900px;
     }
-    .why li{
+    .bullets li{
       margin-top:14px;
       margin-left:18px;
       color:var(--muted);
@@ -142,6 +145,7 @@
       margin-top:32px;
     }
     .price-card{
+      position:relative;            /* allows corner tag */
       border:1px solid var(--border);
       padding:28px;
       background:#fff;
@@ -151,18 +155,27 @@
       font-weight:800;
       margin:12px 0;
     }
+
+    /* Featured styling that DOES NOT change spacing */
     .featured{
       border:2px solid var(--accent);
+      box-shadow:0 10px 28px rgba(37,99,235,.10);
     }
-    .badge{
-      display:inline-block;
+
+    /* Corner tag: doesn't push content down */
+    .tag{
+      position:absolute;
+      top:14px;
+      right:14px;
+      font-size:.78rem;
+      font-weight:800;
       padding:6px 10px;
       border-radius:999px;
       background:rgba(37,99,235,.10);
       color:var(--accent);
-      font-weight:800;
-      font-size:.85rem;
-      margin-bottom:12px;
+      border:1px solid rgba(37,99,235,.25);
+      line-height:1;
+      pointer-events:none;
     }
 
     /* Footer */
@@ -179,7 +192,7 @@
     }
   </style>
 
-  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BNQ0JD3S1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -203,7 +216,6 @@
 
 <header>
   <div class="container nav">
-    <!-- Logo now links to top of page -->
     <a href="#" class="brand">RentalViewer</a>
     <a class="btn btn-primary" href="#contact">Contact RentalViewer</a>
   </div>
@@ -214,7 +226,7 @@
     <h1>We attend rental viewings for you — so you don’t have to.</h1>
     <p>
       RentalViewer attends rental and flat viewings across Auckland on your behalf.
-      Join live via video call or receive a recorded walkthrough with honest feedback,
+      Join live via video call or receive a recorded walkthrough with honest, independent feedback —
       so you can decide quickly and apply with confidence.
     </p>
 
@@ -232,43 +244,66 @@
 <section class="section" id="how">
   <div class="container">
     <h2>How it works</h2>
-    <p class="sub">A straightforward service designed for busy renters.</p>
+    <p class="sub">A simple process designed for busy renters and relocations.</p>
 
     <div class="steps">
       <div class="step">
         <span>1. Send the listing</span>
-        <p>Share the property link and the scheduled viewing time.</p>
+        <p>Share the property link, suburb, and scheduled viewing time.</p>
       </div>
       <div class="step">
         <span>2. We attend</span>
         <p>We join the viewing and video call you live or record a walkthrough.</p>
       </div>
       <div class="step">
-        <span>3. Get clarity</span>
-        <p>Notes on layout, sunlight, noise, condition, and red flags.</p>
+        <span>3. Get clear feedback</span>
+        <p>You receive practical notes on layout, light, noise, condition, and any red flags.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section alt">
+<section class="section alt" id="why">
   <div class="container">
-    <h2>Why people use RentalViewer</h2>
-    <p class="sub">This service is built for renters who need reliable information fast.</p>
+    <h2>Why RentalViewer</h2>
+    <p class="sub">
+      RentalViewer is built for renters who need reliable, honest information — without the pressure or bias of agents.
+    </p>
 
-    <ul class="why">
-      <li>Can’t attend weekday open homes due to work</li>
-      <li>Moving from overseas or another city</li>
-      <li>Want a second, unbiased opinion before applying</li>
-      <li>Need to move quickly in a competitive rental market</li>
+    <ul class="bullets">
+      <li>Independent service — we don’t work for landlords or agents</li>
+      <li>Focus on what matters: layout, natural light, noise, and condition</li>
+      <li>Live video or detailed walkthroughs you can replay anytime</li>
+      <li>Save travel time and avoid applying for the wrong place</li>
     </ul>
   </div>
 </section>
 
-<section class="section" id="pricing">
+<section class="section" id="included">
+  <div class="container">
+    <h2>What’s included</h2>
+    <p class="sub">Every viewing includes a clear, practical assessment — not just a video.</p>
+
+    <ul class="bullets">
+      <li>Full video walkthrough (live or recorded)</li>
+      <li>Notes on layout, space, and natural light</li>
+      <li>Observations on noise, street activity, and surroundings</li>
+      <li>Condition check: damp signs, ventilation, general upkeep (non-technical)</li>
+      <li>Honest feedback on pros, cons, and red flags</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section alt" id="pricing">
   <div class="container">
     <h2>Pricing</h2>
-    <p class="sub">Simple, transparent pricing. No lock-in.</p>
+    <p class="sub">
+      Transparent pricing. No subscriptions, no contracts. Just pay for the viewings you need.
+    </p>
+    <p class="sub" style="margin-top:10px;">
+      Most renters spend $20–$40 in travel and hours of time for each open home.
+      RentalViewer gives you the same insight — plus independent feedback.
+    </p>
 
     <div class="pricing-grid">
       <div class="price-card">
@@ -278,7 +313,7 @@
       </div>
 
       <div class="price-card featured">
-        <span class="badge">Most popular</span>
+        <span class="tag">Most popular</span>
         <h3>Live video call</h3>
         <div class="price">$69</div>
         <p>Join the viewing live and ask questions in real time.</p>
@@ -287,13 +322,13 @@
       <div class="price-card">
         <h3>Multi-viewing pack</h3>
         <div class="price">$180</div>
-        <p>Three viewings at a discounted rate.</p>
+        <p>Three viewings at a discounted rate for active searches.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section alt" id="contact">
+<section class="section" id="contact">
   <div class="container">
     <h2>Request a viewing</h2>
     <p class="sub">Send the listing link and viewing time to get started.</p>
