@@ -7,12 +7,10 @@
   <!-- SEO: Title + description -->
   <title>RentalViewer Auckland – Rental Viewing Service (Live Video or Recorded Walkthrough)</title>
   <meta name="description" content="RentalViewer is an Auckland rental viewing service. We attend flat and rental viewings for you via live video call or recorded walkthrough, with honest independent feedback so you can apply confidently." />
-
-  <!-- SEO: Canonical (set to GitHub URL for now; change to your custom domain when you launch it) -->
-  <link rel="canonical" href="https://rentalsnz.github.io/" />
-
-  <!-- SEO: Robots -->
   <meta name="robots" content="index,follow" />
+
+  <!-- SEO: Canonical (update to your custom domain when you switch) -->
+  <link rel="canonical" href="https://rentalsnz.github.io/" />
 
   <!-- Social share (Open Graph + Twitter) -->
   <meta property="og:type" content="website" />
@@ -20,8 +18,6 @@
   <meta property="og:description" content="Auckland rental viewing service: live video call or recorded walkthrough with honest feedback so you can decide faster." />
   <meta property="og:url" content="https://rentalsnz.github.io/" />
   <meta property="og:site_name" content="RentalViewer" />
-  <!-- Optional: add an image later and update this -->
-  <!-- <meta property="og:image" content="https://rentalsnz.github.io/og-image.png" /> -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="RentalViewer Auckland – Rental Viewing Service" />
   <meta name="twitter:description" content="We attend Auckland rental viewings for you via live video call or recorded walkthrough." />
@@ -47,24 +43,9 @@
     },
     "priceRange": "$$",
     "makesOffer": [
-      {
-        "@type": "Offer",
-        "name": "Recorded Walkthrough",
-        "price": "49",
-        "priceCurrency": "NZD"
-      },
-      {
-        "@type": "Offer",
-        "name": "Live Video Call",
-        "price": "69",
-        "priceCurrency": "NZD"
-      },
-      {
-        "@type": "Offer",
-        "name": "Multi-viewing Pack (3 viewings)",
-        "price": "180",
-        "priceCurrency": "NZD"
-      }
+      { "@type": "Offer", "name": "Recorded Walkthrough", "price": "49", "priceCurrency": "NZD" },
+      { "@type": "Offer", "name": "Live Video Call", "price": "69", "priceCurrency": "NZD" },
+      { "@type": "Offer", "name": "Multi-viewing Pack (3 viewings)", "price": "180", "priceCurrency": "NZD" }
     ]
   }
   </script>
@@ -80,7 +61,7 @@
     }
 
     *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
-    html{scroll-behavior:smooth;} /* UX polish for anchor links */
+    html{scroll-behavior:smooth;}
     body{background:var(--bg);color:var(--primary);line-height:1.65;}
     a{text-decoration:none;color:inherit;}
     .container{max-width:1100px;margin:0 auto;padding:24px;}
@@ -271,10 +252,8 @@
 </header>
 
 <main>
-  <!-- SEO: explicit IDs and scannable structure -->
   <section class="hero" id="top">
     <div class="container">
-      <!-- SEO: location keyword in H1 without sounding spammy -->
       <h1>Auckland rental viewing service — we attend viewings for you.</h1>
 
       <p>
@@ -312,7 +291,7 @@
         </div>
         <div class="step">
           <span>3. Get practical feedback</span>
-          <p>Notes on layout, natural light, noise, condition, and any red flags (non-technical).</p>
+          <p>Notes on layout, natural light, noise, and general condition (non-technical).</p>
         </div>
       </div>
     </div>
@@ -320,7 +299,7 @@
 
   <section class="section alt" id="why">
     <div class="container">
-      <h2>Why choose RentalViewer in Auckland</h2>
+      <h2>Why choose RentalViewer</h2>
       <p class="sub">
         Built for renters who need reliable information — without pressure or sales tactics.
       </p>
@@ -336,9 +315,9 @@
 
   <section class="section" id="included">
     <div class="container">
-      <h2>What’s included in every viewing</h2>
+      <h2>What’s included</h2>
       <p class="sub">
-        You get a clear, practical assessment — not just a video.
+        Every viewing includes a clear, practical assessment — not just a video.
       </p>
 
       <ul class="bullets">
@@ -348,20 +327,6 @@
         <li>Condition check: damp signs, ventilation, general upkeep (non-technical)</li>
         <li>Honest feedback on pros, cons, and red flags</li>
       </ul>
-    </div>
-  </section>
-
-  <!-- SEO: local targeting without spam -->
-  <section class="section alt" id="areas">
-    <div class="container">
-      <h2>Areas we cover</h2>
-      <p class="sub">
-        We cover most of Auckland. Common areas include: CBD, Ponsonby, Grey Lynn, Mt Eden, Newmarket, Remuera,
-        Epsom, Onehunga, Mt Wellington, Glen Innes, Kingsland, Eden Terrace, and the North Shore.
-      </p>
-      <p class="sub" style="margin-top:10px;">
-        Not sure if we can make a specific viewing time or suburb? Email us and we’ll confirm availability.
-      </p>
     </div>
   </section>
 
@@ -399,23 +364,7 @@
     </div>
   </section>
 
-  <!-- SEO: FAQ content helps long-tail searches -->
-  <section class="section" id="faq">
-    <div class="container">
-      <h2>FAQ</h2>
-      <p class="sub">Quick answers to common questions about our Auckland rental viewing service.</p>
-
-      <ul class="bullets">
-        <li><strong>Do you work with agents or landlords?</strong> No — we’re independent and focused on the renter.</li>
-        <li><strong>How fast do I get the video and notes?</strong> Typically the same day, depending on viewing time.</li>
-        <li><strong>What if filming isn’t allowed?</strong> We’ll do a live call where possible and provide written notes.</li>
-        <li><strong>Do you do technical building inspections?</strong> No — we provide a practical, non-technical assessment.</li>
-        <li><strong>Can you attend viewings outside Auckland?</strong> Currently Auckland-focused. Ask and we’ll advise.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section alt" id="contact">
+  <section class="section" id="contact">
     <div class="container">
       <h2>Request a viewing</h2>
       <p class="sub">
