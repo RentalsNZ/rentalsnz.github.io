@@ -87,7 +87,7 @@
     }
     .brand:hover{color:var(--accent);}
 
-    /* NEW: header right-side nav */
+    /* header right-side nav */
     .nav-right{
       display:flex;
       align-items:center;
@@ -304,7 +304,7 @@
       .form-grid{grid-template-columns:1fr;}
     }
 
-    /* NEW: success message banner */
+    /* success message banner */
     .success-banner{
       display:none;
       margin-top:18px;
@@ -481,12 +481,10 @@
         Tip: the more detail you include, the faster we can confirm.
       </div>
 
-      <!-- NEW: Success message (shows after Formspree redirect) -->
       <div id="success-banner" class="success-banner" role="status" aria-live="polite">
         Thanks, message sent. We’ll get back to you shortly.
       </div>
 
-      <!-- NEW: Web lead form (Formspree) -->
       <div class="form-wrap">
         <h3 style="margin-top:28px;">Or send a quick request</h3>
         <p class="sub" style="margin-top:8px;">
@@ -529,10 +527,42 @@
                      placeholder="e.g., 12 Example St, Mount Eden">
             </div>
 
+            <!-- CHANGED: split datetime into date + time dropdown -->
             <div class="form-field">
-              <label for="datetime">Viewing date & time *</label>
-              <input class="input" id="datetime" name="viewing_datetime" type="datetime-local" required>
-              <div class="form-note">Tip: enter the scheduled viewing start time.</div>
+              <label for="viewing_date">Viewing date *</label>
+              <input class="input" id="viewing_date" name="viewing_date" type="date" required>
+            </div>
+
+            <div class="form-field">
+              <label for="viewing_time">Viewing time *</label>
+              <select class="select" id="viewing_time" name="viewing_time" required>
+                <option value="" selected disabled>Select a time</option>
+                <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+              </select>
+              <div class="form-note">Tip: choose the scheduled viewing start time.</div>
             </div>
 
             <div class="form-field">
@@ -553,7 +583,6 @@
           </div>
         </form>
       </div>
-      <!-- END NEW -->
     </div>
   </section>
 </main>
